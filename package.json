@@ -14,6 +14,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/graphql": "^14.2.3",
+    "@types/sequelize": "^4.28.20",
     "nodemon": "^3.1.7",
     "typescript": "^5.6.3"
   },
@@ -25,6 +26,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "graphql": "^16.9.0",
-    "pg": "^8.13.1"
+    "mysql2": "^3.11.4",
+    "sequelize": "^6.37.5"
   }
 }
