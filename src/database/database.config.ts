@@ -2,8 +2,11 @@
 import { Sequelize } from "sequelize";
 import 'dotenv/config';
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
 const {
   DB_NAME,
   DB_USERNAME,

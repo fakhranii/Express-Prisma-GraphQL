@@ -2,12 +2,15 @@ import {sequelize} from "../database/database.config";
 import {DataTypes} from "sequelize";
 
  const User = sequelize.define("User", {
+<<<<<<< HEAD
 
    id: {
      type: DataTypes.INTEGER,
      autoIncrement: true,
      primaryKey: true,
    },
+=======
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
   fullname: {
     type: DataTypes.STRING,
     allowNull: false, // required

@@ -15,8 +15,11 @@
     "@types/cookie-session": "^2.0.49",
     "@types/cors": "^2.8.17",
     "@types/graphql": "^14.2.3",
+<<<<<<< HEAD
     "@types/passport": "^1.0.17",
     "@types/passport-google-oauth20": "^2.0.16",
+=======
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
     "@types/sequelize": "^4.28.20",
     "nodemon": "^3.1.7",
     "prettier": "^3.3.3",
@@ -32,8 +35,11 @@
     "express": "^4.21.1",
     "graphql": "^16.9.0",
     "mysql2": "^3.11.4",
+<<<<<<< HEAD
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
+=======
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
     "sequelize": "^6.37.5"
   }
 }

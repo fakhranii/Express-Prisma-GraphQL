@@ -6,6 +6,7 @@ import { resolvers } from './graphql/resolvers';
 import { expressMiddleware } from '@apollo/server/express4';
 import cors from 'cors';
 import { json } from 'body-parser';
+<<<<<<< HEAD
 import { initializeDatabase } from './database/database.config';
 import './entities/user.entity';
 import './auth/loginWithGoogle-auth';
@@ -34,6 +35,14 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+=======
+import {initializeDatabase, sequelize} from "./database/database.config";
+import "./entities/user.entity";
+
+const app: Express = express();
+
+
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
 
 // graphQl
 let apolloServer: ApolloServer;
@@ -48,12 +57,37 @@ async function startServer(): Promise<void> {
 
 (async () => {
   await initializeDatabase(); // Wait for DB connection and sync
+<<<<<<< HEAD
+=======
 
   // After DB is ready, start the Apollo and Express servers
   await startServer().catch((error) => {
     console.error('Error starting Apollo Server:', error);
   });
 
+  // Start Express server
+  app.listen(process.env.APP_PORT, () => {
+    console.log('The server is listening on port ' + process.env.APP_PORT);
+  });
+})()
+
+// startServer().catch((error) => {
+//   console.error('Error starting Apollo Server:', error);
+// });
+//
+//
+// // express server
+// app.listen( process.env.APP_PORT, () => {
+//   console.log('the server is listening on port ' +  process.env.APP_PORT);
+// })
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
+
+  // After DB is ready, start the Apollo and Express servers
+  await startServer().catch((error) => {
+    console.error('Error starting Apollo Server:', error);
+  });
+
+<<<<<<< HEAD
   // Start Express server
   app.listen(process.env.APP_PORT, () => {
     console.log('The server is listening on port ' + process.env.APP_PORT);
@@ -69,3 +103,5 @@ async function startServer(): Promise<void> {
 // app.listen( process.env.APP_PORT, () => {
 //   console.log('the server is listening on port ' +  process.env.APP_PORT);
 // })
+=======
+>>>>>>> 514472de7f082046d328da99cb13d9e688d749de
